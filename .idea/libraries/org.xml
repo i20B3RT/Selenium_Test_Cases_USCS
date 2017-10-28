@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="org">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../../../Selenium" />
+    </SOURCES>
+  </library>
+</component>

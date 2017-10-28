@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="openga">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../Selenium/client-combined-3.5.3-nodeps-sources.zip!/" />
+    </SOURCES>
+  </library>
+</component>
