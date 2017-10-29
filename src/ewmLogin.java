@@ -29,9 +29,17 @@ public class ewmLogin {
 
 
 //        System.setProperty();
-        WebDriver driver = new ChromeDriver();
+       // WebDriver driver = new ChromeDriver();
         //driver.get("https://www.lynda.com/Selenium-tutorials/Mastering-Selenium-Testing-Tools/521207-2.html");
+        String os = System.getProperty("os.name").toLowerCase();
 
+        WebDriver driver = new ChromeDriver();
+
+        if (os.contains("mac")) {
+            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "i20B3RT/Google Drive/Selenium/Chrome_Driver/");
+        } else {
+            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "fwrmoral/Google Drive/Selenium/Chrome_Driver/chromedriver.exe");
+        }
 
 
         //////////////////////////////////////////////////////////////////////////////////////////////////

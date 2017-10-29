@@ -11,8 +11,16 @@ public class TestSelenium {
         //System.setProperty("webdriver.chrome.driver", "C://Users/fwrmoral/Google Drive/Selenium/Chrome_Driver/chromedriver.exe");
        // WebDriver driver = new ChromeDriver();
 
+//        WebDriver driver = new ChromeDriver();
+        String os = System.getProperty("os.name").toLowerCase();
+
         WebDriver driver = new ChromeDriver();
 
+        if (os.contains("mac")) {
+            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "i20B3RT/Google Drive/Selenium/Chrome_Driver/");
+        } else {
+            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "fwrmoral/Google Drive/Selenium/Chrome_Driver/chromedriver.exe");
+        }
 
         driver.manage().window().maximize();
         driver.get("http://toolsqa.wpengine.com/automation-practice-form/");
