@@ -2,7 +2,7 @@
  * Created by fwrmoral on 10/28/2017.
  */
 //package ewmloginpage;
-import java.sql.Driver;
+//import java.sql.Driver;
 //import java.io.File;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -22,10 +22,15 @@ public class ewmLogin {
         String myLOGIN =("/ewm/login.html");
         String myHOME =("/ewm/home.htm");
 
-
+       // System.setProperty("webdriver.chrome.driver", "/Users/i20B3RT/Google Drive/Selenium/Chrome_Driver/chromedriver");
 
 //This returns the driver from the projects root location
+       // WebDriver driver = new ChromeDriver();
+
+
+//        System.setProperty();
         WebDriver driver = new ChromeDriver();
+        //driver.get("https://www.lynda.com/Selenium-tutorials/Mastering-Selenium-Testing-Tools/521207-2.html");
 
 
 
@@ -41,6 +46,7 @@ public class ewmLogin {
         //input username
         WebElement myElement = driver.findElement(By.name("j_username"));
         myElement.sendKeys("fwrmoral");
+
 
         //////////////////////////////////////////////////////////////////////////////////////////////////
         //input password
@@ -75,6 +81,11 @@ public class ewmLogin {
         driver.findElement(By.xpath("//button[@id='createNewBtn']")).click();
 
         ////////////////////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 
         //with wait_for_page_load(browser):
